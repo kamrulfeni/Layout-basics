@@ -5,10 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <script src="https://kit.fontawesome.com/39d4c89063.js" crossorigin="anonymous"></script>
+
+    <style>
+        nav{
+            display: flex;
+            /* icon set the rigt site psition
+            justify-content: space-between; 
+            and nav er vitore duita  span tag er maje nia ashate hobe anchort tag
+            */
+            justify-content: space-between;
+        }
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    margin-top:  50px;
+}
+     .login-form{
+       display: flex;
+       flex-direction: column;
+       width: 50%;
+       /* border: 2px solid red; */
+     }
+     .login-form input{
+        margin-top: 1em;
+        font-size: 1.5em;
+        padding: 5px 10px;
+     }
+    .login-form input[type="submit"]{
+    background-color: gold;
+    border:0;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: 700;
+    }
+
+
+    </style>
 </head>
 <body>
-    <form class="login-form">
-  <h3>please Login</h3>
-    </form>
+ <header>
+
+    <nav>
+        <!-- a*4 -->
+        <span>
+            <a href="">Home</a>
+            <a href="">Dashboard</a>
+            <a href="">Inventory</a>
+        </span>
+        <span>
+            <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+        </span>
+       
+    </nav>
+ </header>
+
+
+    <section class="login-container">
+        <form class="login-form">
+            <h1>please Login</h1>
+            <input type="email" name="" id="" placeholder="your email" required>
+            <input type="password" name="" id="" placeholder="password" required>
+            <input type="submit" value="Login">
+        </form>
+    </section>
 </body>
 </html>
